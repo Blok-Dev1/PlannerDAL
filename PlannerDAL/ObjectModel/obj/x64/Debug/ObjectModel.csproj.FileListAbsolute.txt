@@ -2,3 +2,8 @@ C:\Users\slaubscher\source\repos\PlannerDAL\PlannerDAL\ObjectModel\bin\x64\Debug
 C:\Users\slaubscher\source\repos\PlannerDAL\PlannerDAL\ObjectModel\bin\x64\Debug\ObjectModel.pdb
 C:\Users\slaubscher\source\repos\PlannerDAL\PlannerDAL\ObjectModel\obj\x64\Debug\ObjectModel.dll
 C:\Users\slaubscher\source\repos\PlannerDAL\PlannerDAL\ObjectModel\obj\x64\Debug\ObjectModel.pdb
+C:\Users\slaubscher\source\repos\PlannerDAL2\PlannerDAL\ObjectModel\bin\x64\Debug\ObjectModel.dll
+C:\Users\slaubscher\source\repos\PlannerDAL2\PlannerDAL\ObjectModel\bin\x64\Debug\ObjectModel.pdb
+C:\Users\slaubscher\source\repos\PlannerDAL2\PlannerDAL\ObjectModel\obj\x64\Debug\ObjectModel.csprojAssemblyReference.cache
+C:\Users\slaubscher\source\repos\PlannerDAL2\PlannerDAL\ObjectModel\obj\x64\Debug\ObjectModel.dll
+C:\Users\slaubscher\source\repos\PlannerDAL2\PlannerDAL\ObjectModel\obj\x64\Debug\ObjectModel.pdb

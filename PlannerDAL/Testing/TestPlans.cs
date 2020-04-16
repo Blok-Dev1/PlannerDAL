@@ -88,6 +88,20 @@ namespace Testing
             }
         }
 
+        [TestMethod]
+        public void TestLoadEPSFile()
+        {
+            using (var uow = new UnitOfWork<PlanDBContext>(new PlanDBContext()))
+            {
+                var epsrepo = uow.GetRepository<Epsfile>();
+
+                var epsfile = epsrepo.GetList(predicate: t => t.Exfdata != null,
+                    orderBy: t => t.OrderByDescending(p => p.EpsfileId),
+                    top: 1,
+                  disableTracking: true)
+                    .FirstOrDefault();
+            }
+        }
 
         private PlanDBContext SqlLiteInMemoryContext()
         {
