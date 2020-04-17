@@ -32,5 +32,7 @@ namespace DataModel
         void Update(params T[] entities);
         void Update(IEnumerable<T> entities);
         void BulkMerge(IEnumerable<T> entities);
+
+        void BulkSinchronise(IEnumerable<T> entities);
     }
 }

@@ -139,5 +139,11 @@ namespace DataModel
         {
             _dbSet.UpdateRange(entities);
         }
+
+        public void BulkSinchronise(IEnumerable<T> entities)
+        {
+            //_dbSet.BulkSynchronize(entities, Planid);
+            throw new NotImplementedException();
+        }
     }
 }

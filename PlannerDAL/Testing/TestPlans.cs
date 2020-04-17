@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace Testing
 {
@@ -85,6 +86,36 @@ namespace Testing
                 uow.Context.Plans.Remove(plan);
 
                 uow.SaveChanges();
+            }
+        }
+
+        [TestMethod]
+        public void TestBulkAddTasksNewPlan()
+        {
+            using (var uow = new UnitOfWork<PlanDBContext>(new PlanDBContext()))
+            {
+                var planid = 1;
+
+                var scheduleid = 1;
+
+                var tasks = uow.GetRepository<Task>();
+
+                var newTasks = new List<Task>();
+
+                for(int i = 1; i < 1000; i++)
+                {
+                    var task = new Task();
+
+                    task.PlanId = planid;
+
+                    task.ScheduleId = scheduleid;
+
+                    task.ActivityCode = " Code";
+                    //...
+                    newTasks.Add(task);
+                }
+
+                tasks.BulkAdd(newTasks);
             }
         }
 

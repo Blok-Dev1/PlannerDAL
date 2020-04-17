@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext 'Data Source=MRPPLANQA;Initial Catalog=ConsiliumDEV;User Id=sa;Password=Password1;' 

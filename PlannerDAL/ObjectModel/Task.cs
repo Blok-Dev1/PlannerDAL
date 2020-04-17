@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ObjectModel
 {
-    public class Class1
+    public class Task
     {
+        //public ObjectId 
     }
 }
